@@ -1,17 +1,17 @@
-import {MatButtonModule, 
-  MatToolbarModule, 
-  MatCardModule, 
-  MatIconModule, 
+import {MatButtonModule,
+  MatToolbarModule,
+  MatCardModule,
+  MatIconModule,
   MatSidenavModule,
   MatTabsModule,
   MatListModule} from '@angular/material';
-  
+
 import { NgModule } from '@angular/core';
 
 const matModules = [
-  MatButtonModule, 
-  MatToolbarModule, 
-  MatCardModule, 
+  MatButtonModule,
+  MatToolbarModule,
+  MatCardModule,
   MatSidenavModule,
   MatIconModule,
   MatTabsModule,
@@ -22,4 +22,4 @@ const matModules = [
   imports: matModules,
   exports: matModules,
 })
-export class MaterialModule { }
+export class MaterialModule {}
