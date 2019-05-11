@@ -11,6 +11,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+import { ScanQrCodeComponent } from './components/scan-qr-code/scan-qr-code.component';
+import { NearbyCafesComponent } from './components/nearby-cafes/nearby-cafes.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,17 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
     HomeComponent,
     LayoutComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    ScanQrCodeComponent,
+    NearbyCafesComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxQRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

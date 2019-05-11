@@ -1,0 +1,38 @@
+<div *ngIf="show1">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Awesome Cafe</mat-card-title>
+      <mat-card-subtitle>Coffee Shop</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../assets/img/cafe1.jpg" alt="">
+    <mat-card-content>
+      <span>
+        We are an amazing coffee shop.
+      </span>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div *ngIf="show2">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Coffee 4 U</mat-card-title>
+      <mat-card-subtitle>European cafe</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../assets/img/cafe2.jpg" alt="">
+    <mat-card-content>
+      <span>
+        Some marketing spiel about Coffee 4 U.
+      </span>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="arrows">
+  <button mat-icon-button (click)="onArrowClick()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <button mat-icon-button (click)="onArrowClick()">
+      <mat-icon>arrow_forward</mat-icon>
+  </button>
+</div>
