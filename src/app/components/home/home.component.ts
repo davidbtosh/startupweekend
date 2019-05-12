@@ -8,9 +8,20 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  indicator: string;
+  ok = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
+    const ind = sessionStorage.getItem('indicator');
+    console.log(ind);
+    if (ind == null) {
+      this.indicator = '2';
+    } else {
+      this.indicator = ind;
+    }
+    this.ok = true;
   }
 
 executeSelectedChange(event) {

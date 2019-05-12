@@ -1,5 +1,12 @@
 <section>
   <mat-card>
+    <div *ngIf="ok">
+      <img *ngIf="indicator==1" src="./assets/img/indicator1.png" />
+      <img *ngIf="indicator==2" src="./assets/img/indicator2.png" />
+      <img *ngIf="indicator==3" src="./assets/img/indicator3.png" />  
+    </div>
+  </mat-card>
+  <mat-card>
     <div>
       <img src="./assets/img/logo.png" />  
     </div>
@@ -10,10 +17,10 @@
         <button mat-raised-button color="primary" (click)="navigate('nearby-cafes')">Near by cafes</button>
       </div>
       <div class="btn">
-        <button mat-raised-button color="primary" (click)="navigate('scan-qr-code')">My Smart cup</button>
+        <button mat-raised-button color="primary" (click)="navigate('scan-qr-code')">My Cup Buddy</button>
       </div>
       <div class="btn">
-        <button mat-raised-button color="primary">Preferences</button>
+        <button mat-raised-button color="primary" (click)="navigate('preferences')">Preferences</button>
       </div>
     </div>
   </mat-card>

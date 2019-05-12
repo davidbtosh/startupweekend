@@ -14,6 +14,7 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { ScanQrCodeComponent } from './components/scan-qr-code/scan-qr-code.component';
 import { NearbyCafesComponent } from './components/nearby-cafes/nearby-cafes.component';
+import { PreferencesComponent } from './components/preferences/preferences.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NearbyCafesComponent } from './components/nearby-cafes/nearby-cafes.com
     HeaderComponent,
     SidenavListComponent,
     ScanQrCodeComponent,
-    NearbyCafesComponent
+    NearbyCafesComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,
